@@ -1,0 +1,23 @@
+@import "../../../styles/variables.css";
+
+.control {
+  width: 320px;
+  height: 32px;
+  background-color:var(--color-white);
+  border-radius: 16px;
+  font-family: var(--font-family); 
+  font-style: normal;
+  padding-left: 16px;
+  color: var(--color-white);
+}
+
+
+.control.flow {
+  opacity: 0.1;
+}
+
+.control::placeholder {
+  text-align:start;
+  font-style: normal;
+  color: var(--color-white);
+}

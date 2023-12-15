@@ -1,0 +1,62 @@
+@import "../../../styles/variables.css";
+.buttonBox {
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  border-radius: 8px;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.buttonBox.disable {
+  background-color: rgba(4, 21, 38, 0.1);
+}
+
+.buttonBox.active {
+  background: var(--color-white);
+}
+
+.buttonImg {
+  width: 20px;
+  height: 20px;
+  fill: var(--color-white);
+}
+
+.buttonImg.disable {
+  width: 16px;
+  height: 16px;
+}
+
+.buttonImg.active {
+  fill: var(--color-blue);
+}
+
+.buttonCount {
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  width: 16px;
+  height: 16px;
+  margin-top: -20px;
+  margin-left: -7px; 
+  user-select: none;
+  border-radius: 8px;  
+  font-size: 10px;
+  font-style: inherit;
+  line-height: inherit;  
+}
+
+.buttonCount.active {
+  display: none;
+}
+
+.buttonCount.info{
+  display: flex;
+  color: var(--color-white);
+  background: var(--color-pink);
+}  
+
+.buttonCount.disable{
+  display: none;
+}  

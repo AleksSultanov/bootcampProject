@@ -1,0 +1,31 @@
+@import "../../styles/variables.css";
+.bar {
+  display: flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content: space-between;
+  width: 72px;
+  height: 100%;
+  border-radius: 12px;
+  background: var(--bar-background);
+}
+
+.bar.active {
+  border-radius: 0;
+}
+
+.colvirBox {
+  width: 32px;
+  height: 32px;
+  margin-top: 20px;
+}
+
+.buttonBar{
+  display: flex;
+  flex-direction:column;
+  gap: 32px;
+}
+
+.bottomEle {
+  margin-bottom: 16px;
+}
