@@ -1,5 +1,8 @@
 :root {
     --font-family: 'Roboto',Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    --font-size-control: 14px;
+    --font-size-control-title: 16px;
+
     --bar-background: linear-gradient(180deg, #1173DA 0%, #A4E2FF 100%);
     --color-black: #041526;
     --color-blue: #1173DA;
@@ -8,5 +11,12 @@
     --color-yellow: #F2C935;
     --color-lightgreen: #71DEBE;
     --color-white:#FFF;
+
+    --width-MiniIcon: 16px;
+    --height-MiniIcon: 16px;
+
+    --barControl-width: 320px;
+    --barControl-height: 36px;
+  
 
 }

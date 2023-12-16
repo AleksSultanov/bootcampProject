@@ -1,23 +1,86 @@
 @import "../../../styles/variables.css";
 
-.control {
-  width: 320px;
-  height: 32px;
-  background-color:var(--color-white);
-  border-radius: 16px;
-  font-family: var(--font-family); 
-  font-style: normal;
-  padding-left: 16px;
-  color: var(--color-white);
+:root{
+  --width: var(--barControl-width);
+  --height: var(--barControl-height);
+  --padding-sizeM :8px;
+  --padding-sizel :10px;
+  --padding-sizeX :16px;  
+  
 }
 
+.box{
+  display: flex;
+  position: relative;
+  width: var(--width);
+  height: var(--height);
+  text-align: left;
 
+}
+
+.control {
+  display: flex;
+  align-items:center;
+  position: absolute;
+  left: 0px;
+  height: var(--height);
+  min-width: var(--width);
+  max-width: var(--width);
+  padding-left: var(--padding-sizeX);
+  background-color:var(--color-white);
+  border-radius: 16px;
+  color: var(--color-white);
+  
+    
+}
 .control.flow {
   opacity: 0.1;
 }
 
-.control::placeholder {
-  text-align:start;
+.control.fake {
+  border: none;
+  background-color:transparent;
+  color: transparent;
+}
+
+
+
+.control.flow::selection {
+  background-color:var(--color-black);
+}
+
+.innerInput {
+  display: flex;
+  align-items:center;
+  justify-content: space-between; 
+  height: var(--height);  
+  min-width: var(--width);
+  max-width: var(--width);
+  padding-left: var(--padding-sizeX);
+  color: transparent;
+}
+
+.txt {
+  font-family: var(--font-family); 
+  font-size: var(--font-size-control); 
   font-style: normal;
+  color: var(--color-black);
+  }
+
+.txt.flow {
   color: var(--color-white);
+}
+
+.close {
+  display: none;
+}
+
+.close.flow {
+  display: block;
+  margin-right: var(--padding-sizeM);
+}
+
+.icon {
+  width: var(--width-MiniIcon);
+  height: var(--height-MiniIcon);
 }

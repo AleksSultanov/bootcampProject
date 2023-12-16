@@ -1,0 +1,71 @@
+@import "../../../styles/variables.css";
+
+:root{
+  --width: var(--barControl-width);
+  --height: var(--barControl-height);
+  --padding-size :16px;  
+  
+}
+
+.box{
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items:center;
+  width: var(--width);
+  height: var(--height);
+  padding-left: var(--padding-size);
+  cursor: pointer;
+}
+
+
+.txt{
+  flex-grow: 1;
+  font-family: inherit;
+  font-size: var(--font-size-control-title);
+  font-style: inherit;
+  padding-left: 8px;
+  text-align: left;
+}
+
+.txt.flow{
+  color: var(--color-white);
+}
+
+.txt::selection{
+  background: transparent;
+}  
+
+.imgflag{
+  display: none;
+}
+
+.imgflag.flag{
+  display: block;
+  width: 12px;
+  margin-right: 8px;
+}
+
+.imgflag::selection{
+  background: transparent;
+}
+
+.imgfolder::selection{
+  background: transparent;
+}
+
+.selbox{
+  display: none;
+}
+.selbox.active{
+  display: block;
+  position: absolute;
+  left: 0;
+  padding-left: 8px;
+  opacity: 0.10; 
+  min-width: calc(var(--width) + 8px);
+  height: var(--height);
+  border-radius: 8px;
+  background: var(--color-white);
+}
+
