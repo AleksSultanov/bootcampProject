@@ -1,16 +1,23 @@
 :root {
     --font-family: 'Roboto',Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    --font-size-control-M: 12px;
     --font-size-control: 14px;
     --font-size-control-title: 16px;
+    --font-size-form-title: 24px;
+    --font-weight-form-title: 300;
 
-    --bar-background: linear-gradient(180deg, #1173DA 0%, #A4E2FF 100%);
     --color-black: #041526;
     --color-blue: #1173DA;
     --color-lightblue: #A4E2FF;
     --color-pink: #F05B82;
     --color-yellow: #F2C935;
     --color-lightgreen: #71DEBE;
+    --color-grey:#F6F8FA;
     --color-white:#FFF;
+    --color-separator:rgba(66, 73, 82, 0.10);
+
+    --bar-background: linear-gradient(180deg, #1173DA 0%, #A4E2FF 100%);
+    --form-background: var(--color-white);
 
     --width-MiniIcon: 16px;
     --height-MiniIcon: 16px;

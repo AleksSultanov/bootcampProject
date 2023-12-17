@@ -6,16 +6,27 @@
   --padding-sizeM :8px;
   --padding-sizel :10px;
   --padding-sizeX :16px;  
-  
 }
 
 .box{
   display: flex;
   position: relative;
+  align-items:center;
   width: var(--width);
   height: var(--height);
-  text-align: left;
+}
 
+.selbox{
+  height: var(--height);
+  min-width: var(--width);
+  max-width: var(--width);
+  background-color:var(--color-grey);
+  border-radius: 16px;
+}
+
+.selbox.flow{
+  background-color:var(--color-white);
+  opacity: 0.1;
 }
 
 .control {
@@ -26,58 +37,34 @@
   height: var(--height);
   min-width: var(--width);
   max-width: var(--width);
+
   padding-left: var(--padding-sizeX);
-  background-color:var(--color-white);
-  border-radius: 16px;
-  color: var(--color-white);
-  
-    
-}
-.control.flow {
-  opacity: 0.1;
-}
-
-.control.fake {
-  border: none;
-  background-color:transparent;
-  color: transparent;
-}
-
-
-
-.control.flow::selection {
-  background-color:var(--color-black);
-}
-
-.innerInput {
-  display: flex;
-  align-items:center;
-  justify-content: space-between; 
-  height: var(--height);  
-  min-width: var(--width);
-  max-width: var(--width);
-  padding-left: var(--padding-sizeX);
-  color: transparent;
-}
-
-.txt {
   font-family: var(--font-family); 
   font-size: var(--font-size-control); 
   font-style: normal;
-  color: var(--color-black);
-  }
 
-.txt.flow {
+  background-color:transparent;
+  border: none;
+  border-radius: 16px;
+    
+}
+.control.flow {
   color: var(--color-white);
 }
 
+.control.flow::placeholder {
+  color: var(--color-white);
+  opacity: 0.50;
+}
 .close {
   display: none;
 }
 
 .close.flow {
   display: block;
-  margin-right: var(--padding-sizeM);
+  position: absolute;
+  right: var(--padding-sizeM);
+  cursor: pointer;
 }
 
 .icon {

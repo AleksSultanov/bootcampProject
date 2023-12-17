@@ -1,23 +1,23 @@
-import classes from "./styles.module.css"
-import { TreeRow } from "../ui/TreeRow/index"
-import PropTypes from "prop-types"
-import { useState } from "react"
-import { Tasklist, setOpenCloseTask } from "../../Data/Tasks"
+import classes from "./styles.module.css";
+import { TreeRow } from "../ui/TreeRow/index";
+import PropTypes from "prop-types";
+import { useState } from "react";
+import { Tasklist, setOpenCloseTask } from "../../Data/Tasks";
 
 export function TreePanel(onSetValue, selectId) {
-    const [selectCurId, setIsSelect] = useState(selectId)
+    const [selectCurId, setIsSelect] = useState(selectId);
 
     function onSettask(id) {
-        onSetValue.onSetValue(id)
-        setIsSelect(id)
+        onSetValue.onSetValue(id);
+        setIsSelect(id);
     }
     function onSetDbltask(id) {
-        onSettask(id)
-        setOpenCloseTask(id)
+        onSettask(id);
+        setOpenCloseTask(id);
     }
 
-    let visibleTask = Tasklist.filter((task) => task.visible)
-    let isTask = visibleTask.length > 0
+    let visibleTask = Tasklist.filter((task) => task.visible);
+    let isTask = visibleTask.length > 0;
     return (
         <div className={classes.box}>
             {isTask > 0 &&
@@ -42,13 +42,13 @@ export function TreePanel(onSetValue, selectId) {
                                 isFlag={task.isFlag}
                             />{" "}
                         </div>
-                    )
+                    );
                 })}
         </div>
-    )
+    );
 }
 
 TreePanel.propTypes = {
     onSetValue: PropTypes.func,
     selectId: PropTypes.number,
-}
+};

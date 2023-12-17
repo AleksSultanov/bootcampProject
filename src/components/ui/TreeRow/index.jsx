@@ -1,10 +1,10 @@
-import PropTypes from "prop-types"
-import classes from "./styles.module.css"
-import { GroupField } from "./styles"
-import img_folder from "../../../assets/tree/folder.svg"
-import img_folder_open from "../../../assets/tree/folder-open.svg"
-import img_item from "../../../assets/tree/item.svg"
-import img_flag from "../../../assets/tree/flag.svg"
+import PropTypes from "prop-types";
+import classes from "./styles.module.css";
+import { GroupField } from "./styles";
+import img_folder from "../../../assets/tree/folder.svg";
+import img_folder_open from "../../../assets/tree/folder-open.svg";
+import img_item from "../../../assets/tree/item.svg";
+import img_flag from "../../../assets/tree/flag.svg";
 
 export function TreeRow({
     id,
@@ -48,7 +48,7 @@ export function TreeRow({
                 }`}
             ></div>
         </div>
-    )
+    );
 }
 
 TreeRow.propTypes = {
@@ -60,4 +60,4 @@ TreeRow.propTypes = {
     isFlow: PropTypes.bool,
     isSelect: PropTypes.bool,
     isFlag: PropTypes.bool,
-}
+};

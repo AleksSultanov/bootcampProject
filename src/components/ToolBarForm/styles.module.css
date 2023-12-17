@@ -1,0 +1,58 @@
+@import "../../styles/variables.css";
+.box {
+  display: flex;
+  justify-content: space-between;
+  height: 70px;
+  width: 100%;
+  padding: 24px;
+  border-bottom: 1px solid var(--color-separator);
+}
+
+.caption {
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+  gap: 5px; 
+}
+
+
+.buttons{
+  display: flex;
+  flex-direction:row;
+  align-items: center;
+}
+
+.path{
+ cursor: pointer;
+}
+
+.title{
+  cursor: pointer;
+}
+
+.separator{
+  height: 16px;
+  width: 0px;
+  background-color: #D9D9D9;
+  border: 2px solid #D9D9D9;
+  margin-right: 16px;
+}
+
+.icon {
+  width: var(--width-MiniIcon);
+  max-height: var(--height-MiniIcon);
+
+}
+
+.close{
+  margin-right: 34px;
+  cursor: pointer;
+}
+
+.buttonslist {
+  margin-right: 16px;
+  cursor: pointer;
+}
+.find {
+  margin-right: 16px;
+}

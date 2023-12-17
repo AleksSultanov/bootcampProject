@@ -139,27 +139,27 @@ export let Tasklist = [
         parent: 12,
         visible: false,
     },
-]
+];
 
 function setOpenCloseChildTask(id, isopen) {
     Tasklist.map((task) => {
         if (task.parent === id) {
-            task.visible = isopen
+            task.visible = isopen;
             if (!isopen) {
-                task.isOpen = false
-                setOpenCloseChildTask(task.id, isopen)
+                task.isOpen = false;
+                setOpenCloseChildTask(task.id, isopen);
             }
         }
-    })
+    });
 }
 
 export function setOpenCloseTask(id) {
-    let isopen = false
+    let isopen = false;
     Tasklist.map((task) => {
         if (task.id === id) {
-            task.isOpen = !task.isOpen
-            isopen = task.isOpen
-            setOpenCloseChildTask(task.id, isopen)
+            task.isOpen = !task.isOpen;
+            isopen = task.isOpen;
+            setOpenCloseChildTask(task.id, isopen);
         }
-    })
+    });
 }

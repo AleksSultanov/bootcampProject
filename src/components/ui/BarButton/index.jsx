@@ -1,6 +1,6 @@
-import PropTypes from "prop-types"
-import classes from "./styles.module.css"
-import { useState } from "react"
+import PropTypes from "prop-types";
+import classes from "./styles.module.css";
+import { useState } from "react";
 
 export function BarButton({
     children,
@@ -8,9 +8,9 @@ export function BarButton({
     disabled,
     buttonActive = false,
 }) {
-    const [actived, setActived] = useState(buttonActive)
+    const [actived, setActived] = useState(buttonActive);
     function onButtonClick() {
-        setActived(!actived)
+        setActived(!actived);
     }
     return (
         <div
@@ -36,13 +36,13 @@ export function BarButton({
                 <span>{count}</span>
             </div>
         </div>
-    )
+    );
 }
 
 BarButton.propTypes = {
     children: PropTypes.any,
-    count: PropTypes.string,
+    count: PropTypes.number,
     onClick: PropTypes.func,
     disabled: PropTypes.bool,
     buttonActive: PropTypes.bool,
-}
+};

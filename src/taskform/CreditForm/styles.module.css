@@ -1,0 +1,27 @@
+@import "../../styles/variables.css";
+
+.main {
+  display: flex;
+  flex-direction:column;
+  align-items:flex-start;
+  max-width: 1440px;
+  height: 100vh;
+  width: 100vw;
+  border-radius: inherit;
+  
+}
+
+.top {
+  min-height: 94px;
+  width: 100%;
+  white-space: nowrap;
+}
+
+.client {
+  width: 100%;
+}
+
+.bottom {
+  margin-bottom: 0;
+}
+

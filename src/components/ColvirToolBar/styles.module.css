@@ -8,7 +8,7 @@
   height: 100%;
   border-radius: 12px;
   background: var(--bar-background);
-}
+ }
 
 .bar.active {
   border-radius: 0;

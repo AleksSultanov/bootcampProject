@@ -3,6 +3,7 @@
 :root{
   --width: var(--barControl-width);
   --height: var(--barControl-height);
+  --padding-sizeM :8px;  
   --padding-size :16px;  
   
 }
@@ -10,11 +11,11 @@
 .box{
   display: flex;
   position: relative;
-  justify-content: space-between;
   align-items:center;
-  width: var(--width);
+  min-width: calc(var(--width) - var(--padding-size));
+  max-width: calc(var(--width) - var(--padding-size));
   height: var(--height);
-  padding-left: var(--padding-size);
+  padding-left: var(--padding-size); 
   cursor: pointer;
 }
 
@@ -24,7 +25,7 @@
   font-family: inherit;
   font-size: var(--font-size-control-title);
   font-style: inherit;
-  padding-left: 8px;
+  padding-left: var(--padding-sizeM);
   text-align: left;
 }
 
@@ -43,7 +44,7 @@
 .imgflag.flag{
   display: block;
   width: 12px;
-  margin-right: 8px;
+  margin-right: var(--padding-sizeM);
 }
 
 .imgflag::selection{
@@ -61,9 +62,8 @@
   display: block;
   position: absolute;
   left: 0;
-  padding-left: 8px;
   opacity: 0.10; 
-  min-width: calc(var(--width) + 8px);
+  min-width: var(--width);
   height: var(--height);
   border-radius: 8px;
   background: var(--color-white);

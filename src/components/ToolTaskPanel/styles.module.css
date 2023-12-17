@@ -1,0 +1,13 @@
+.box {
+  display: flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content: center;
+  padding-left: 24px;
+  padding-top: 24px;
+}
+
+.demo {
+  cursor: pointer;
+}
+
